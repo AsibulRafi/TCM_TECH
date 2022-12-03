@@ -1,0 +1,140 @@
+.app__navbar {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #535050;
+  padding: 2rem 2rem;
+  z-index: 9999;
+}
+.app__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+
+.app__navbar-links li {
+  margin: 0 2rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.app__navbar-links li a:hover {
+  color: #daab34;
+}
+.app__navbar-links li svg {
+  font-size: 16px;
+  margin-left: 5px;
+  color: #fff;
+}
+.app__navbar-links li a {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.app__navbar-login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.get__demo {
+  background-color: transparent;
+  border: 1px solid #daab34;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #daab34;
+  margin-right: 2rem;
+}
+.get__demo:hover {
+  background-color: #daab34;
+  color: #fff;
+}
+.sales {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 28px;
+  margin-right: 2rem;
+}
+.app__navbar-login svg {
+  font-size: 2rem;
+  color: #fff;
+}
+.app__navbar-smallscreen {
+  display: none;
+}
+.app__navbar-smallscreen_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  transition: 0.5s ease;
+  flex-direction: column;
+  z-index: 5;
+}
+.app__navbar-smallscreen_overlay .overlay__close {
+  font-size: 27px;
+  color: #daab34;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.app__navbar-smallscreen_links {
+  list-style: none;
+  margin-top: 10rem;
+}
+.app__navbar-smallscreen_links li {
+  margin: 2rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.app__navbar-smallscreen_links li svg {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: #fff;
+}
+.app__navbar-smallscreen_links li a {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 500;
+  line-height: 28px;
+  display: inline-block;
+}
+@media screen and (max-width: 1150px) {
+  .app__navbar-links,
+  .app__navbar-login {
+    display: none;
+  }
+  .app__navbar {
+    flex-direction: row-reverse;
+  }
+  .app__navbar-smallscreen {
+    display: flex;
+    z-index: 9999;
+  }
+  .get__demo {
+    padding: 1rem 4rem;
+    margin-right: 0rem;
+  }
+  .sales {
+    margin-right: 0rem;
+  }
+}
