@@ -40,7 +40,7 @@ const Home = () => {
                 </p>
               </div>
               <h1 className="hero__content-info-heading">
-                Good client-customer relationship made possible
+                Best Forex Platform money can buy
               </h1>
               <p className="hero__content-info-text">
                 SupraCRM is the client oriented platform that aims for teams to
