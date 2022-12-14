@@ -374,6 +374,130 @@
 .preview__content img {
   width: 100%;
 }
+/* About Page */
+.hero__header {
+  padding: 10rem 10rem;
+}
+.hero__header-content {
+  text-align: center;
+}
+.hero__header-content h2 {
+  font-family: "Koh Santepheap", "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  letter-spacing: 0.2px;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+.hero__header-content p {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 1000px;
+}
+
+.aboutTools {
+  padding: 10rem 10rem;
+}
+.aboutTools__heading {
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.aboutTools__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 10rem;
+  column-gap: 2rem;
+}
+.aboutTools__content-single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aboutTools__content-single img {
+  margin-bottom: 1rem;
+}
+.aboutTools__content-single h4 {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 500;
+}
+.about__info {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  width: 1000px;
+  text-align: center;
+  margin-block: 15rem;
+}
+/* Product Page */
+.productsPage {
+  padding: 10rem 10rem;
+}
+.products__single {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+.products__single-info {
+  margin-right: 5rem;
+  flex: 1;
+}
+.products__single-info h2 {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.products__single-info p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  width: 500px;
+  letter-spacing: 0.06em;
+}
+.products__single-img {
+  flex: 1;
+}
+.footer {
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__single {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.footer__single img {
+  margin-right: 1rem;
+}
+.footer__single h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+.footer__single:not(:last-child) {
+  margin-right: 4rem;
+}
 /* Responsive */
 @media screen and (max-width: 1800px) {
   .hero {
@@ -389,6 +513,16 @@
     padding: 10rem 4rem;
   }
   .preview {
+    padding: 10rem 4rem;
+  }
+  .hero__header {
+    padding: 10rem 4rem;
+  }
+
+  .aboutTools {
+    padding: 10rem 4rem;
+  }
+  .productsPage {
     padding: 10rem 4rem;
   }
 }
@@ -409,7 +543,25 @@
   .preview {
     padding: 10rem 3rem;
   }
+  .hero__header {
+    padding: 10rem 3rem;
+  }
+  .aboutTools {
+    padding: 10rem 3rem;
+  }
+  .productsPage {
+    padding: 10rem 3rem;
+  }
   .products__content-single {
+    width: 100%;
+  }
+  .hero__header-content p {
+    width: 100%;
+  }
+  .about__info {
+    width: 100%;
+  }
+  .products__single-info p {
     width: 100%;
   }
 }
@@ -485,6 +637,35 @@
   .preview__heading h2 {
     font-size: 40px;
   }
+  .hero__header-content h2 {
+    font-size: 46px;
+  }
+  .hero__header-content p {
+    font-size: 16px;
+  }
+  .aboutTools__heading {
+    font-size: 28px;
+  }
+  .aboutTools__content {
+    text-align: center;
+  }
+  .aboutTools__content-single h4 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+  }
+  .about__info {
+    font-size: 18px;
+  }
+  .products__single {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .products__single-info {
+    margin-right: 0rem;
+    margin-bottom: 5rem;
+  }
 }
 /* Mobile */
 @media screen and (max-width: 650px) {
@@ -502,6 +683,15 @@
   }
   .preview {
     padding: 10rem 2rem;
+  }
+  .hero__header {
+    padding: 10rem 2rem;
+  }
+  .aboutTools {
+    padding: 10rem 2rem;
+  }
+  .productsPage {
+    padding: 10rem 2em;
   }
   .hero__content-info-heading {
     font-size: 36px;
@@ -541,6 +731,42 @@
   }
   .reviews__heading h2 {
     font-size: 34px;
+  }
+  .hero__header-content h2 {
+    font-size: 36px;
+    margin-bottom: 2rem;
+  }
+  .hero__header-content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .aboutTools__heading {
+    font-size: 24px;
+  }
+  .aboutTools__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .aboutTools__content-single h4 {
+    font-size: 20px;
+  }
+  .about__info {
+    font-size: 16px;
+  }
+  .products__single-info h2 {
+    font-size: 24px;
+  }
+  .products__single-info p {
+    font-size: 14px;
+  }
+  .products__single-img img {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer__single:not(:last-child) {
+    margin-right: 0rem;
+    margin-bottom: 3rem;
   }
 }
 /* Mobile Small */

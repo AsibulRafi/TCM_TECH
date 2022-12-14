@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { BsChevronDown, BsSearch } from "react-icons/bs";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
@@ -13,24 +14,10 @@ const Navbar = () => {
       </div> */}
       <ul className="app__navbar-links">
         <li>
-          <a href="/">About SupraCRM</a>
-          <BsChevronDown />
+          <Link to="/about">About SupraCRM</Link>
         </li>
         <li>
-          <a href="/">Products</a>
-          <BsChevronDown />
-        </li>
-        <li>
-          <a href="/">Webtrader</a>
-          <BsChevronDown />
-        </li>
-        <li>
-          <a href="/">Development</a>
-          <BsChevronDown />
-        </li>
-        <li>
-          <a href="/">Contact</a>
-          <BsChevronDown />
+          <Link to="/products">Products</Link>
         </li>
       </ul>
       <div className="app__navbar-login">
@@ -58,28 +45,14 @@ const Navbar = () => {
             />
             <ul className="app__navbar-smallscreen_links">
               <li>
-                <a href="#home" onClick={() => setToggleMenu(false)}>
+                <Link to="/about" onClick={() => setToggleMenu(false)}>
                   About SupraCRM
-                </a>
-                <BsChevronDown />
+                </Link>
               </li>
               <li>
-                <a href="#about" onClick={() => setToggleMenu(false)}>
+                <Link to="/products" onClick={() => setToggleMenu(false)}>
                   Products
-                </a>
-                <BsChevronDown />
-              </li>
-              <li>
-                <a href="#menu" onClick={() => setToggleMenu(false)}>
-                  Webtrader
-                </a>
-                <BsChevronDown />
-              </li>
-              <li>
-                <a href="#awards" onClick={() => setToggleMenu(false)}>
-                  Development
-                </a>
-                <BsChevronDown />
+                </Link>
               </li>
               <li>
                 <a href="#login" className="get__demo">

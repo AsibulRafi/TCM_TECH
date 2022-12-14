@@ -26,6 +26,8 @@
 }
 .app__navbar-links li a:hover {
   color: #daab34;
+  border-bottom: 2px solid #daab34;
+  transition: border 100ms ease-in-out;
 }
 .app__navbar-links li svg {
   font-size: 16px;
